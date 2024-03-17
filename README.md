@@ -48,11 +48,13 @@ endmodule
 ```
 
 **RTL realization**
+
 ![Screenshot 2024-03-17 125257](https://github.com/Sabeeha23/BOOLEAN_FUNCTION_MINIMIZATION/assets/150231876/48c9b3bb-c067-42cb-b78f-ead9b8539924)
 
 
 
 **Output:**
+
 ![2024-03-17 (2)](https://github.com/Sabeeha23/BOOLEAN_FUNCTION_MINIMIZATION/assets/150231876/120fc810-4f00-4d94-9c79-2e14e2ab2483)
 
 
