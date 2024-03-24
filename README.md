@@ -37,25 +37,33 @@ Hardware – PCs, Cyclone II , USB flasher
 
 Developed by: Sabeeha Shaik 
 RegisterNumber: 212223230176 */
+``` 
+module booleanfunction(A,B,C,D,F1); 
+input A,B,C,D; 
+output F1; 
+wire x1,x2,x3,x4,x5; 
+assign x1=(~A)&(~B)&(~C)&(~D); 
+assign x2=(A)&(~C)&(~D); 
+assign x3=(~B)&(C)&(~D); 
+assign x4=(~A)&(B)&(C)&(D); 
+assign x5=(B)&(~C)&(D); 
+assign F1=x1|x2|x3|x4|x5; 
+endmodule 
 ```
-// Verilog model: Circuits with Boolean expressions
-module exp2(E, F, A, B, C, D);
-output E,F;
-input A, B, C, D;
-assign E = A || (B && C) || ((!B) && D);
-assign F = ((!B) && C) || (B && (!C) && (!D));
-endmodule
-```
+![2024-03-24](https://github.com/Sabeeha23/BOOLEAN_FUNCTION_MINIMIZATION/assets/150231876/678658cf-4682-484c-a8af-3b3083fbd22a)
+
 
 **RTL realization**
 
-![Screenshot 2024-03-17 125257](https://github.com/Sabeeha23/BOOLEAN_FUNCTION_MINIMIZATION/assets/150231876/48c9b3bb-c067-42cb-b78f-ead9b8539924)
+![Screenshot 2024-03-24 224150](https://github.com/Sabeeha23/BOOLEAN_FUNCTION_MINIMIZATION/assets/150231876/69e72eb5-88c2-4e05-8069-1890417e261c)
+
 
 
 
 **Output:**
 
-![2024-03-17 (2)](https://github.com/Sabeeha23/BOOLEAN_FUNCTION_MINIMIZATION/assets/150231876/120fc810-4f00-4d94-9c79-2e14e2ab2483)
+![2024-03-24 (2)](https://github.com/Sabeeha23/BOOLEAN_FUNCTION_MINIMIZATION/assets/150231876/79278d5e-3b0c-4a4a-9430-a2d49b7d385e)
+
 
 
 
